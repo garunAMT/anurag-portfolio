@@ -96,7 +96,7 @@ export const Projects = [
       name: 'FEBS Website',
       image: febs,
       description: 'A website created for the Society of Financxe, Economics & Business of IIT Bhubaneswar.',
-      deployedLink: '',
+      deployedLink: 'https://febs-iitbbs.org/',
       githubLink: 'https://github.com/garunAMT/FEBS-Website'
     },
     {
@@ -104,7 +104,7 @@ export const Projects = [
       name: 'AFG Website',
       image: afg,
       description: 'A portfolio website created for the Applied Fluids Group, IIT Bhubaneswar.',
-      deployedLink: '',
+      deployedLink: 'https://www.appliedfluidsgroup.in/',
       githubLink: 'https://github.com/garunAMT/afg-2'
     },
     {
