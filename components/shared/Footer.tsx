@@ -29,7 +29,7 @@ const Footer = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-500 leading-relaxed">
+              <a href="mailto:anuragtripathi2901@gmail.com" className="text-green-500 leading-relaxed">
                 anuragtripathi2901@gmail.com
               </a>
             </div>
