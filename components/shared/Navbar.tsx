@@ -20,19 +20,23 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import { ModeToggle } from "./ModeToggle";
+
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="mx-4 my-2 flex justify-between">
+    <div className="mx-4 my-2 flex justify-between sticky top-0">
       <div className="flex items-center justify-center">
         <h1 className="text-xl font-bold">Anurag</h1>
       </div>
+
+      {/* ----------DESKTOP NAVBAR------------- */}
       <div className="hidden md:block">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
+              <Link href="#home" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Home
                 </NavigationMenuLink>
@@ -59,10 +63,16 @@ const Navbar = () => {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
+            <NavigationMenuItem>
+              <ModeToggle />
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div className="md:hidden">
+      
+      {/* ----------MOBILE NAVBAR-------------- */}
+      <div className="md:hidden flex gap-2">
+        <ModeToggle />
         <Sheet>
           <SheetTrigger>
             <svg
@@ -82,9 +92,10 @@ const Navbar = () => {
           </SheetTrigger>
           <SheetContent className="flex items-center justify-center">
               <ul className="text-xl text-center flex flex-col gap-10 items-center justify-center">
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
+                <li><Link href="#home">Home</Link></li>
+                <li><Link href="#skills">Skills</Link></li>
+                <li><Link href="#projects">Projects</Link></li>
+                <li><Link href="#contact">Contact</Link></li>
               </ul>
           </SheetContent>
         </Sheet>

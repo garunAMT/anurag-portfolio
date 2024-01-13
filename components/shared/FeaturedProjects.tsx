@@ -5,19 +5,19 @@ import { Button } from "../ui/button";
 
 const FeaturedProjects = () => {
   return (
-    <section className="text-gray-600 body-font" id="projects">
+    <section className="body-font" id="projects">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2">
               My featured projects
             </h1>
-            <div className="h-1 mb-4 w-20 bg-green-400 rounded"></div>
+            <div className="h-1 mb-4 w-40 bg-green-400 rounded"></div>
             <Button asChild>
               <Link href="https://github.com/garunAMT">View all projects</Link>
             </Button>
           </div>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 dark:text-gray-400">
             Sculpting sleek, responsive websites with a focus on seamless user
             experiences. Proficient in fullstack technologies, I bring designs
             to life. Explore my featured projects for a glimpse into web
@@ -27,7 +27,7 @@ const FeaturedProjects = () => {
         <div className="flex flex-wrap -m-4">
           {Projects.map((project) => (
             <div className="xl:w-1/4 md:w-1/2 p-4" key={project.id}>
-              <div className="bg-gray-100 p-6 rounded-lg">
+              <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
                 <Link href={project.deployedLink}>
                   <Image
                     className="h-40 rounded w-full object-cover object-center mb-6"
@@ -44,7 +44,7 @@ const FeaturedProjects = () => {
                 >
                   Visit Github
                 </Link>
-                <h1 className="text-lg text-gray-900 font-medium title-font mb-4">
+                <h1 className="text-lg font-medium title-font mb-4">
                   {project.name}
                 </h1>
                 <p className="leading-relaxed text-base">
