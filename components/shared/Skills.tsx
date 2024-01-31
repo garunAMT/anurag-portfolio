@@ -3,7 +3,7 @@ import { SkillSet } from "@/constants";
 
 const Skills = () => {
   return (
-    <div className="container mx-auto px-5 my-8" id="skills">
+    <div className="container mx-auto px-5 py-12" id="skills">
       <div>
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2">
           Skills

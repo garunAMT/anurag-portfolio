@@ -87,6 +87,36 @@ export const SkillSet = [
       name: 'C',
       value: 75,
       logo: 'c'
+    },
+    {
+      id: 12,
+      name: 'MySQL',
+      value: 80,
+      logo: 'mysql'
+    },
+    {
+      id: 13,
+      name: 'Git',
+      value: 90,
+      logo: 'git'
+    },
+    {
+      id: 14,
+      name: 'GitHub',
+      value: 90,
+      logo: 'github'
+    },
+    {
+      id: 15,
+      name: 'Pandas',
+      value: 75,
+      logo: 'python'
+    },
+    {
+      id: 16,
+      name: 'Numpy',
+      value: 75,
+      logo: 'python'
     }
   ]
 

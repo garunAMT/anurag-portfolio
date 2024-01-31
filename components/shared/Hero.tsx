@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
 import Developer from "../../public/assets/Developer.svg";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -22,30 +22,39 @@ const Hero = () => {
             <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium">
               Hello I'm Anurag
             </h1>
-            <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium">The developer next door</h2>
+            <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
+              The developer next door
+            </h2>
             {/* <p className="mb-8 leading-relaxed">
               Copper mug
             </p> */}
             <div className="flex gap-4">
-              <Button className="flex gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-                  />
-                </svg>
-                <span>Resume</span>
-              </Button>
+              <Link
+                href="https://drive.google.com/drive/folders/1x-rw84vwDsvPkNlwSt_QLIev8KILwlxr"
+                target="_blank"
+              >
+                <Button className="flex gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                    />
+                  </svg>
+                  <span>Resume</span>
+                </Button>
+              </Link>
 
-              <Button variant="outline">Explore</Button>
+              <Button variant="outline">
+                <Link href="#skills">Explore</Link>
+              </Button>
             </div>
           </div>
         </div>

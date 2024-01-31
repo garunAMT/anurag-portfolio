@@ -26,7 +26,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="mx-4 my-2 flex justify-between sticky top-0">
+    <div className="mx-4 py-1 flex justify-between sticky top-0 z-10 bg-white dark:bg-gray-950">
       <div className="flex items-center justify-center">
         <h1 className="text-xl font-bold">Anurag</h1>
       </div>
